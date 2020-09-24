@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <title>Blog Post - Start Bootstrap Template</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="/index.js" defer type="text/javascript"></script> 
+    <!-- Custom styles for this template -->
+    <link href="/blog-post.css" rel="stylesheet">
+
+  
+  </head>
+  
+<body>
+    
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Blogger's.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/activepost">Active Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+        <hr>
+        <!-- Actual Post Area -->
+        <div class="card my-4">
+          <h5 class="card-header">Enter Your Post:</h5>
+
+          <div class="card-body">
+            <form method="post" enctype="multipart/form-data" action="post/store">
+              
+              <!-- Code for Name -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="name">Name</span>
+                </div>
+              <input required type="text" placeholder="Enter Your Name" class="form-control" name="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <!-- Code for Email -->
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="email">Email</span>
+                  </div>
+                <input required type="email" class="form-control" placeholder="Enter Your Email" name="email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+
+            <!-- Code for Date -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="date">Date</span>
+                </div>
+              <input required type="date" class="form-control" placeholder="Enter Your Date" name="date" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <!-- Code for Title for Topic -->
+            
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="title">Title</span>
+              </div>
+            <input required type="text" class="form-control" placeholder="Title" name="title" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+            <!-- Code For File Input -->
+            
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" name="image" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+              <label class="custom-file-label"  for="inputGroupFile01">Choose file</label>
+            </div>
+            <br><br>
+
+            <!-- Code for  Button  and Text Area Post Data -->
+            
+            <div class="form-group">
+                <textarea  placeholder="Enter Your Post" name="content" class="form-control" rows="3"></textarea>
+              </div>
+              <button required type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+<%-include('./reuseable/footer') %>
+</body>
+
+</html>
