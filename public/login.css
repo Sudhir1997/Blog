@@ -1,0 +1,47 @@
+.outer{
+    width: 40vw;
+    height: 60vh;
+    background: rgb(47,174,204);
+    background: linear-gradient(27deg, rgba(47,174,204,1) 0%, rgba(38,168,66,0.2511379551820728) 38%);
+    position: relative;
+    margin-left:30vw;
+    margin-top:10vh;
+    background-color:white;
+}
+body{
+    background: rgb(63,94,251);
+background: linear-gradient(27deg, rgba(63,94,251,1) 10%, rgba(70,252,109,0.2511379551820728) 63%);
+}
+#submit{
+    width: 30vw;
+    position: relative;
+    margin-left: 4.5vw;
+    margin-top:5vh;
+}
+input[type="email"]{
+    position: relative;
+    margin-top: 10vh;
+
+}
+input[type="password"]{
+    position: relative;
+    margin-top: 5vh;
+}
+#newUser{
+    display: block;
+    position: relative; 
+    color: black;
+    left:14vw;
+    top: 2vh;
+}
+#newUser2{
+    display: block;
+    position: relative; 
+    color: black;
+    left:15vw;
+    top: 2vh;
+}
+#emailField{
+    position: relative;
+    margin-top: 10vh;
+}
