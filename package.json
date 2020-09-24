@@ -1,0 +1,27 @@
+{
+  "name": "blog-project",
+  "version": "1.0.0",
+  "description": "A Simple Project To Create Blogs",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.mjs"
+  },
+  "author": "Sudhir Dhawan",
+  "license": "ISC",
+  "node":"14.9.0",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.0",
+    "nodemailer": "^6.4.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
